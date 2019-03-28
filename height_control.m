@@ -2,7 +2,7 @@ function [t_out, z_out] = height_control(trajhandle, controlhandle)
 
 addpath('utils');
 
-video = false;
+video = true;
 video_filename = 'height_control.avi';
 
 params = sys_params;
