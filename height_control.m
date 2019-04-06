@@ -3,7 +3,7 @@ function [t_out, z_out] = height_control(trajhandle, controlhandle)
 addpath('utils');
 
 video = true;
-video_filename = 'height_control.avi';
+video_filename = 'height_control_hover.avi';
 
 params = sys_params;
 
@@ -13,7 +13,7 @@ real_time = true;
 %% **************************** FIGURES *****************************
 disp('Initializing figures...')
 if video
-  video_writer = VideoWriter(video_filename, 'Uncompressed AVI');
+  video_writer = VideoWriter(video_filename);
   open(video_writer);
 end
 h_fig = figure;
